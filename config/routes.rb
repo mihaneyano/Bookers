@@ -3,6 +3,8 @@ Rails.application.routes.draw do
 
   get'top' => 'homes#top'
   get'books' => 'books#new'
-  post'books' => 'books#show'
-
+  post'books' => 'books#create'
+  get'/show' => 'books#show'
+  get'/edit' => 'books#edit'
+  get'/new' => 'books#new'
 end
