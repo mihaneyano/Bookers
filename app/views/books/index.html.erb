@@ -1,4 +1,8 @@
 <body>
+  <div>
+    <%= flash[:notice] %>
+  </div>
+
   <h1>Books</h1>
   <table>
     <thead>
@@ -38,7 +42,7 @@
     <div><label>Body</label></div>
     <div class="text-area"><%=f.text_area :body%></div>
 
-    <div><%=f.submit'Create Box'%></div>
+    <div><%=f.submit'Create Book'%></div>
 
   <%end%>
 
