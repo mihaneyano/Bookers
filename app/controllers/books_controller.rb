@@ -33,8 +33,7 @@ class BooksController < ApplicationController
       flash[:notice] = "Book was successfully updated."
       redirect_to book_path(book.id)
     else
-      flash[:notice] = "error."
-      redirect_to book_path(book.id)
+      redirect_to edit_book_path(book.id)
     end
   end
 
